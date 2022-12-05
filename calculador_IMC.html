@@ -25,8 +25,12 @@
 
     }
     
-    imprimir("El promedio del IMC calculado de Dave y Neiber es: "  + (calcularImc(79,1.76)+calcularImc(69,1.75))/2);
+    nombre = prompt("Informe su nombre: ");
+    pesoInformado = prompt(nombre + ", Informe su peso: ");
+    alturaInformada = prompt(nombre + ", Informe su estatura: ");
 
-    imprimir("El promedio del IMC calculado de Camila y Alejandra es: "  + (calcularImc(55,1.60)+calcularImc(60,1.55))/2);
+    imcCalculado = calcularImc(pesoInformado,alturaInformada);
+
+    imprimir(nombre + ", Su IMC calculado es: "  + imcCalculado);
 
 </script>
