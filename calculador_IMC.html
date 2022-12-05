@@ -21,14 +21,12 @@
 
     function calcularImc(peso,altura) {
 
-        imc = peso / (altura * altura);
-        return imc;
+        return (peso / (altura * altura));
 
     }
-
-    var imcDave = calcularImc(79,1.76);
-    var imcNeiber = calcularImc(69,1.75)
     
-    imprimir("El promedio del IMC calculado de Dave y Neiber es: "  + (imcDave+imcNeiber)/2);
+    imprimir("El promedio del IMC calculado de Dave y Neiber es: "  + (calcularImc(79,1.76)+calcularImc(69,1.75))/2);
+
+    imprimir("El promedio del IMC calculado de Camila y Alejandra es: "  + (calcularImc(55,1.60)+calcularImc(60,1.55))/2);
 
 </script>
