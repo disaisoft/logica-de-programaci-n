@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h1>Programa que calculará tu IMC "Indice de Masa Corporal"</h1>
+
+<script>
+
+    function saltarlinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarlinea()
+
+    }
+
+    function calcularImc(peso, altura, nombre) {
+
+        imc = peso / (altura * altura);
+        imprimir("El IMC calculado de " + nombre + " es: " + imc);
+
+    }
+
+    calcularImc(79,1.76, "Dave");
+    calcularImc(69, 1.75, "Neiber");
+    
+
+</script>
